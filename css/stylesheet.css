@@ -275,6 +275,10 @@ just-continueセクション
   margin-top: 50px;
 }
 
+.contact-form input:hover {
+  opacity: 0.8;
+}
+
 .contact-form input {
   display: inline-block;
   width: 210px;
@@ -283,6 +287,7 @@ just-continueセクション
   box-shadow: 0 3px 6px #00000029;
   line-height: 54px;
   border-radius: 5px;
+  transition: 0.15s;
 }
 
 /*----------------------memo------------------------
