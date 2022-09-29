@@ -1,0 +1,320 @@
+@charset "utf-8";
+
+/*----------------------memo------------------------
+ベース
+--------------------------------------------------*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  color: #333333;
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #333333;
+}
+
+li {
+  list-style: none;
+}
+
+/*----------------------memo------------------------
+ヘッダー
+--------------------------------------------------*/
+header {
+  padding: 20px 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-basis: content;
+  max-width: 980px;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.site-title a:hover {
+  opacity: 0.8;
+}
+
+.site-title a {
+  transition: 0.15s;
+}
+
+.site-title {
+  max-width: 30%;
+  min-width: 90px;
+}
+
+.site-logo {
+  vertical-align: top;
+  height: 40px;
+}
+
+.global-nav {
+  display: flex;
+  font-size: 1.6rem;
+  align-items: center;
+  text-align: center;
+}
+
+.global-nav ul {
+  display: flex;
+}
+
+.global-nav ul li {
+  margin-left: 20px;
+}
+
+.global-nav ul li:nth-of-type(1) {
+  position: relative;
+  padding-right: 28px;
+}
+
+.global-nav ul li:nth-of-type(1) a {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.global-nav a {
+  transition: 0.15s;
+}
+
+.global-nav a:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 466px) {
+  .global-nav ul li {
+    margin-left: 10px;
+  }
+}
+
+/*----------------------memo------------------------
+topセクション
+--------------------------------------------------*/
+#top {
+  background-image: url("../image/austin-distel-wawEfYdpkag-unsplash@2x.png");
+  background-size: cover;
+  background-position: center;
+  height: 551px;
+  color: #fff;
+  position: relative;
+}
+
+#top .section-title {
+  display: none;
+}
+
+.copy-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+}
+
+.copy-wrapper div {
+  display: inline-block;
+}
+
+.copy-wrapper::after {
+  content: "Start from HERE";
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  margin-top: 10px;
+}
+
+/*----------------------memo------------------------
+my-challengeセクション
+--------------------------------------------------*/
+
+#my-challenge {
+  padding: 60px 0 80px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+#my-challenge .section-title {
+  font-size: 3.6rem;
+}
+
+.challenge-container {
+  margin: 49px auto 46px;
+  width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.challenge-item {
+  position: relative;
+  width: 310px;
+  height: 336px;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+.challenge-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.15s;
+}
+
+.challenge-image {
+  height: 172px;
+  width: 310px;
+  vertical-align: top;
+}
+
+.content-text {
+  padding: 20px;
+}
+
+.date {
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: 400;
+  left: 20px;
+  bottom: 20px;
+}
+
+.more {
+  height: 52px;
+  width: 310px;
+  max-width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+.more a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 52px;
+  transition: opacity 0.15s;
+}
+
+.challenge-item a:hover {
+  opacity: 0.8;
+}
+
+.more a:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1020px) {
+  .challenge-container {
+    width: 645px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .challenge-container {
+    width: 310px;
+    gap: 40px;
+  }
+}
+
+/*----------------------memo------------------------
+just-continueセクション
+--------------------------------------------------*/
+
+#just-continue {
+  height: 455px;
+  padding: 59px 0 44px;
+  color: #fff;
+  background-image: url("../image/tim-bogdanov-4uojMEdcwI8-unsplash@2x.png");
+  background-size: cover;
+  background-position: center;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+#just-continue .section-title {
+  font-size: 3.6rem;
+  margin-bottom: 47px;
+}
+
+.just-text {
+  line-height: 2.8rem;
+  margin: -4px 0 -6px;
+}
+
+.just-text span {
+  display: inline-block;
+}
+
+.contact-form {
+  margin-top: 50px;
+}
+
+.contact-form input {
+  display: inline-block;
+  width: 210px;
+  height: 54px;
+  background-color: #83032a;
+  box-shadow: 0 3px 6px #00000029;
+  line-height: 54px;
+  border-radius: 5px;
+}
+
+/*----------------------memo------------------------
+フッター
+--------------------------------------------------*/
+
+footer {
+  background-color: #333333;
+  color: #fff;
+}
+
+.footer-wrapper {
+  display: table;
+  height: 80px;
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.copy-right {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 520px) {
+  /*----------------------memo------------------------
+ヘッダー
+--------------------------------------------------*/
+  header {
+    padding: 10px;
+  }
+  .wrapper {
+    padding: 0;
+  }
+}
